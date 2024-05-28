@@ -12,6 +12,7 @@ public class KeyHandler implements KeyListener {
 
     }
 
+    // When key is pressed corresponding boolean is set to true
     @Override
     public void keyPressed(KeyEvent e) {
         int code = e.getKeyCode();
@@ -29,9 +30,22 @@ public class KeyHandler implements KeyListener {
             rightPressed = true;
         }
     }
-
+    // When key is released "pressed" boolean is set back to false
     @Override
     public void keyReleased(KeyEvent e) {
+        int code = e.getKeyCode();
 
+        if(code ==KeyEvent.VK_W){
+            upPressed = false;
+        }
+        if(code ==KeyEvent.VK_S){
+            downPressed = false;
+        }
+        if(code ==KeyEvent.VK_A){
+            leftPressed = false;
+        }
+        if(code ==KeyEvent.VK_D){
+            rightPressed = false;
+        }
     }
 }

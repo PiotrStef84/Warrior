@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="146446fc-9cf7-4d3e-b162-f21095e50d61" name="Changes" comment="Drawing on a game board, and starting on a key input">
+    <list default="true" id="146446fc-9cf7-4d3e-b162-f21095e50d61" name="Changes" comment="starting on a key input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716754820970</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="starting on a key input">
+      <created>1716799491599</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716799491599</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +105,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating a GamePanel, adding some settings" />
     <MESSAGE value="Drawing on a game board, and starting on a key input" />
-    <option name="LAST_COMMIT_MESSAGE" value="Drawing on a game board, and starting on a key input" />
+    <MESSAGE value="starting on a key input" />
+    <option name="LAST_COMMIT_MESSAGE" value="starting on a key input" />
   </component>
 </project>
