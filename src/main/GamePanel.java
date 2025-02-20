@@ -40,17 +40,83 @@ public class GamePanel extends JPanel implements Runnable{
         gameThread = new Thread(this);
         gameThread.start();
     }
+    // "SLEEP" method gaming loop
+//    @Override
+//    public void run() {
+//
+//        // "Sleep" method for creating game loop
+//        double drawInterval = 1_000_000_000/FPS; // 0.01666 seconds
+//        double nextDrawTime = System.nanoTime() + drawInterval;
+//
+//        while(gameThread != null) {
+//
+//            long currentTime = System.nanoTime();
+//
+//
+//            // 1. UPDATE: update information such as character positions
+//            update();
+//            // 2. DRAW: draw the screen with the updated information.
+//            repaint(); // -> that's how we call paintComponent();
+//
+//
+//
+//            try {
+//                double remainingTime = nextDrawTime - System.nanoTime();
+//                remainingTime = remainingTime/1_000_000; // converting nano to milliseconds
+//
+//                if(remainingTime < 0) {
+//                    remainingTime = 0;
+//                }
+//
+//                Thread.sleep((long) remainingTime);
+//
+//                // Updating next draw time
+//                nextDrawTime +=drawInterval;
+//
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
+//
+//    }
+    // Delta/Accumulator method
     @Override
-    public void run() {
+    public void run(){
+
+        double drawInterval = 1_000_000_000/FPS; // 0.01666 seconds
+        double delta = 0;
+        long lastTime = System.nanoTime();
+        long currentTime;
+
+        long timer = 0;
+        int drawCount = 0;
+
+
 
         while(gameThread != null) {
 
-            long currentTime = System.nanoTime();
+            currentTime = System.nanoTime();
 
-            // 1. UPDATE: update information such as character positions
-            update();
-            // 2. DRAW: draw the screen with the updated information.
-            repaint();
+            delta += (currentTime - lastTime) / drawInterval;
+            timer +=(currentTime - lastTime);
+
+            lastTime = currentTime;
+
+            if(delta >= 1) {
+                update();
+                repaint();
+                delta--;
+                drawCount++;
+
+            }
+
+            if(timer >= 1000000000){
+                System.out.println("FPS: " + drawCount);
+                timer = 0;
+                drawCount = 0;
+            }
+
+
         }
 
     }
