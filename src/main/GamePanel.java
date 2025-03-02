@@ -136,8 +136,6 @@ public class GamePanel extends JPanel implements Runnable{
 
         player.draw(g2);
 
-        g2.fillRect(200, 200, tileSize, tileSize);
-
         // Dispose of this graphics context and release any system resources that it's using
         g2.dispose(); // good practice to save some memory
     }

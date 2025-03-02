@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="146446fc-9cf7-4d3e-b162-f21095e50d61" name="Changes" comment="Creating Player and Entity Class">
-      <change afterPath="$PROJECT_DIR$/res/player/boy_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_up_2.png" afterDir="false" />
+    <list default="true" id="146446fc-9cf7-4d3e-b162-f21095e50d61" name="Changes" comment="Adding sprites">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Warrior.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Warrior.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +35,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Coding/Intelij/JoinTest",
+    "last_opened_file_path": "D:/Coding/Intelij/Games - Java/Warrior/player",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Coding\Intelij\Games - Java\Warrior\player" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Coding\Intelij\Games - Java\Warrior\res\player" />
     </key>
@@ -141,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740316663203</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding sprites">
+      <created>1740418399973</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740418399973</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +161,7 @@
     <MESSAGE value="starting on a key input" />
     <MESSAGE value="adding keyHandler" />
     <MESSAGE value="Creating Player and Entity Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating Player and Entity Class" />
+    <MESSAGE value="Adding sprites" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding sprites" />
   </component>
 </project>
