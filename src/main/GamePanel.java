@@ -1,6 +1,7 @@
 package main;
 
 import entity.Player;
+import tile.TileManager;
 
 import javax.swing.JPanel;
 import java.awt.*;
@@ -20,6 +21,7 @@ public class GamePanel extends JPanel implements Runnable{
     // FPS
     int FPS = 60;
 
+    TileManager tileM = new TileManager(this);
     KeyHandler keyH = new KeyHandler();
 
     // The key to use Thread is implementing Runnable
@@ -130,6 +132,8 @@ public class GamePanel extends JPanel implements Runnable{
 
         Graphics2D g2 = (Graphics2D) g;
 
+        // draw tiles before player, so it be a layer on top of witch the player is drawn.
+        tileM.draw(g2);
         player.draw(g2);
 
         // Dispose of this graphics context and release any system resources that it's using

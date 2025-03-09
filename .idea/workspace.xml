@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="146446fc-9cf7-4d3e-b162-f21095e50d61" name="Changes" comment="Animating player character">
-      <change afterPath="$PROJECT_DIR$/res/tiles/earth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/grass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/sand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/wall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/water.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile/Tile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
+    <list default="true" id="146446fc-9cf7-4d3e-b162-f21095e50d61" name="Changes" comment="Adding background tiles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +43,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Coding\Intelij\Games - Java\Warrior\res\tiles" />
       <recent name="D:\Coding\Intelij\Games - Java\Warrior\player" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -162,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741106482257</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adding background tiles">
+      <created>1741434850369</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741434850369</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +185,7 @@
     <MESSAGE value="Creating Player and Entity Class" />
     <MESSAGE value="Adding sprites" />
     <MESSAGE value="Animating player character" />
-    <option name="LAST_COMMIT_MESSAGE" value="Animating player character" />
+    <MESSAGE value="Adding background tiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding background tiles" />
   </component>
 </project>
