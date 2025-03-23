@@ -64,24 +64,35 @@ public class Player extends Entity{
                keyH.leftPressed == true || keyH.rightPressed == true){
            if(keyH.upPressed == true){
                direction = "up";
-               worldY -= speed;
            }
            else if (keyH.downPressed == true) {
                direction = "down";
-               worldY += speed;
            }
            else if (keyH.leftPressed == true) {
                direction = "left";
-               worldX -= speed;
            }
            else if(keyH.rightPressed){
                direction = "right";
-               worldX += speed;
            }
 
+           // CHECK TILE COLLISION
            collisionOn = false;
-           // passing player to check collision
-           gp.cChecker.checkTile(this);
+           gp.cChecker.checkTile(this); // -> this method checks tiles
+
+           // IF COLLISION IS FALSE, PLAYER CAN MOVE
+           if(collisionOn == false){
+
+               switch (direction){
+                   case "up" : worldY -= speed;
+                       break;
+                   case "down" : worldY += speed;
+                       break;
+                   case "left" : worldX -= speed;
+                       break;
+                   case "right" : worldX += speed;
+                       break;
+               }
+           }
 
            spriteCounter++;
            if(spriteCounter > 12){
