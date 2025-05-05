@@ -15,6 +15,7 @@ public class Entity {
 
     public int spriteCounter = 0;
     public int spriteNum = 1;
+    // used for creating smaller rectangle for collision
     public Rectangle solidArea;
     public boolean collisionOn = false;
 }

@@ -28,11 +28,11 @@ public class CollisionChecker {
         switch(entity.direction){
             case  "up" :
                 entityTopRow = (entityTopWorldY - entity.speed)/gp.tileSize;
-                tileNum1 = gp.tileM.mapTileNum[entityLeftCol][entityTopRow];
-                tileNum2 = gp.tileM.mapTileNum[entityRightCol][entityTopRow];
+                tileNum1 = gp.tileM.mapTileNum[entityLeftCol][entityTopRow]; // Checking one side of small rectangle
+                tileNum2 = gp.tileM.mapTileNum[entityRightCol][entityTopRow]; // Checking other side of small rectangle
 
                 if(gp.tileM.tile[tileNum1].collision == true || gp.tileM.tile[tileNum2].collision == true){
-                    entity.collisionOn = true;
+                    entity.collisionOn = true;  // if one of the tiles are solid entity cannot move
                 }
                 break;
             case  "down" :
